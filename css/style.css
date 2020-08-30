@@ -1,0 +1,552 @@
+@charset"utf-8";
+
+
+
+/*リセット*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #937218;
+    font-family: 'Times New Roman';
+}
+
+
+
+/*中枠*/
+#wrap {
+    margin: 0 15%;
+}
+
+/*トップページ設定*/
+#top {
+    height: 100vh;
+    position: relative;
+}
+
+.topimg {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: auto;
+    margin: 50px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, .2));
+
+}
+
+h1 {
+    width: auto;
+    position: absolute;
+    z-index: 10;
+    top: 25vh;
+    left: 7%;
+    font-size: 3em;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    display: inline-block;
+    width: 3em;
+    height: 2px;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    background-color: #937218;
+}
+
+.top-content {
+    position: relative;
+    z-index: 100;
+    width: 60%;
+    height: 15%;
+    top: 37vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0 auto;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+
+}
+
+.top-content p {
+    position: relative;
+    margin-top: 4%;
+    font-family: 'ヒラギノ明朝 Pro W3';
+    line-height: 2em;
+}
+
+nav {
+    position: relative;
+    top: 66vh;
+    height: 8em;
+    line-height: 6.8em;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav p {
+    position: relative;
+    text-align: center;
+    background-color: rgba(54, 159, 142, 0.49);
+    width: 7em;
+    margin: 10px 10%;
+    border-radius: 5em;
+
+}
+
+nav p:hover {
+    background-color: rgba(49, 88, 82, 0.49);
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .3));
+}
+
+nav a {
+    text-decoration: none;
+    color: #937218;
+}
+
+nav p :before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 37%;
+    display: inline-block;
+    width: 2em;
+    height: 1px;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    background-color: #937218;
+
+}
+
+/*プロフィール設定*/
+#profile {
+    margin: 100px 10px 10px 10px;
+    padding: 10px;
+    background-image: url(../img/aboutbgi.png);
+}
+
+h2 {
+    position: relative;
+    font-size: 2.3em;
+    font-weight: 100;
+    letter-spacing: 0.5em;
+    display: inline;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    left: 48%;
+    bottom: -20%;
+    display: inline-block;
+    width: 2em;
+    height: 2px;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    background-color: #937218;
+
+}
+
+#profile img {
+    display: block;
+    position: absolute;
+    left: 20%;
+    transform: translateY(100%);
+    width: 15%;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, .5));
+}
+
+
+#about {
+    background-color: #e2ddd5;
+    width: 60%;
+    height: 65%;
+    position: relative;
+    left: 35%;
+    padding: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .3);
+
+}
+
+h3 {
+    font-family: 'ヒラギノ明朝 Pro W3';
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 0.3em;
+}
+
+.ruby {
+    letter-spacing: 0.3em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+section {
+    font-family: 'ヒラギノ明朝 Pro W3';
+    line-height: 2em;
+    padding: 10px;
+}
+
+.skill {
+    font-family: 'ヒラギノ明朝 Pro W3';
+    margin: 10px;
+    border: 1px solid rgba(54, 159, 142, 0.60);
+}
+
+.min {
+    padding: 5px;
+    background-color: rgba(54, 159, 142, 0.80);
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+/*ワーク設定*/
+
+#work {
+    margin: 100px 10px 10px 10px;
+    padding: 10px;
+}
+
+.content {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-box {
+    background-color: #fff;
+    font-family: 'ヒラギノ明朝 Pro W3';
+    width: 26%;
+    margin: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+}
+
+.content-box p {
+    background-color: rgba(54, 159, 142, 0.23);
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+    border-radius: .3em;
+}
+
+.content-item1,
+.content-item2,
+.content-item3,
+.content-item4,
+.content-item5,
+.content-item6,
+.content-item7,
+.content-item8 {
+    height: 30vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px;
+    position: relative;
+    top: 10%;
+}
+
+.content-item1 {
+
+    background-image: url(../img/dyna.png);
+
+}
+
+.content-item2 {
+
+    background-image: url(../img/samplesite.png);
+
+}
+
+.content-item3 {
+
+    background-image: url(../img/presen.png);
+
+}
+
+.content-item4 {
+
+    background-image: url(../img/meishi.png);
+}
+
+.content-item5 {
+
+    background-image: url(../img/tendouji.png);
+
+}
+
+.content-item6 {
+
+    background-image: url(../img/wireframe.png);
+
+}
+
+.content-item7 {
+
+    background-image: url(../img/xd.png);
+
+}
+
+.content-item8 {
+
+    background-image: url(../img/hobby0.png);
+
+}
+
+/*モーダルウィンドウ設定*/
+.modal {
+    display: none;
+    z-index: 100;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.modal__bg {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+
+.modal__content {
+    background: #f1f1f1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 90vh;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+}
+
+.modal__sub {
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    margin: 10px 0px 10px 10px;
+    font-family: 'ヒラギノ明朝 Pro W3';
+
+}
+
+h4 {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.subtitle {
+    text-align: center;
+
+}
+
+.modal__sub p {
+    line-height: 1.8em;
+    padding: 10px;
+}
+
+.caution {
+    font-size: 0.8em;
+}
+
+.modal__sub p a {
+    text-decoration: none;
+    color: #937218;
+    background-color: rgba(54, 159, 142, 0.23);
+    padding: 10px;
+    border-radius: 0.5em;
+}
+
+.modal__sub p a:hover {
+    background-color: rgba(49, 88, 82, 0.49);
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .3));
+}
+
+aside {
+    margin: 10px;
+    padding: 5px;
+    background-color: #e2ddd5;
+}
+
+.modal__img {
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+    height: 100%;
+}
+
+.dyna,
+.sample-site,
+.presen,
+.meishi,
+.logo,
+.wireframe,
+.xd,
+.hobby {
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-75%, -50%);
+}
+
+.dyna {
+    transform: translate(-95%, -50%);
+}
+
+.dyna img {
+    width: 80%;
+}
+
+.sample-site {
+    background-image: url(../img/samplescs.png);
+}
+
+.presen {
+    background-image: url(../img/presenscs.png);
+}
+
+.meishi {
+    background-image: url(../img/meishiscs.jpg);
+    transform: translate(-95%, -45%);
+}
+
+.logo {
+    background-image: url(../img/tendouji.png);
+    transform: translate(-95%, -25%);
+}
+
+.wireframe {
+    background-image: url(../img/wireframescs.png);
+    transform: translate(-95%, -40%);
+}
+
+.xd {
+    transform: translate(-95%, -45%);
+    display: flex;
+    justify-content: center;
+}
+
+.xd img {
+    width: 50%;
+    margin: 10px;
+    height: 75vh;
+}
+
+.hobby {
+    transform: translate(-95%, -45%);
+}
+
+.hobby img {
+    margin: 10px;
+}
+
+#modal08 .subtitle,
+#modal08 .p {
+    margin: 20% 0;
+}
+
+
+/*問い合わせ設定*/
+
+#contact {
+    margin: 100px 10px 100px 10px;
+    padding: 10px;
+}
+
+#contact-content {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    font-family: 'ヒラギノ明朝 Pro W3';
+    border: 1px solid #937218;
+    margin: 50px 10px 10px 10px;
+    padding: 10px;
+    text-align: center;
+    line-height: 2em;
+    background-color: #e2ddd5;
+}
+
+#adress {
+    position: relative;
+    font-family: 'ヒラギノ明朝 Pro W3';
+    margin: 50px 10px 10px 50px;
+    padding: 10px;
+    line-height: 2em;
+}
+
+.adtitle {
+    font-size: 1.5em;
+    letter-spacing: 1.2em;
+}
+
+.adcontent {
+    text-indent: 1em;
+    margin: 10px;
+}
+
+/*トップに戻るボタン*/
+#gotop {
+    width: 70px;
+    height: 70px;
+    background-color: rgba(54, 159, 142, 0.49);
+    border-radius: 40px;
+    position: fixed;
+    top: 75vh;
+    right: 7vw;
+    transform: rotate(-90deg);
+
+}
+
+#gotop a {
+    margin-left: 25px;
+    font-size: 3em;
+    color: #937218;
+    text-decoration: none;
+}
+
+#gotop:hover {
+    background-color: rgba(49, 88, 82, 0.49);
+    transition: 0.5s;
+    filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, .3));
+}
+
+/*フッター設定*/
+
+footer {
+    background-color: rgba(54, 159, 142, 0.49);
+    text-align: center;
+    line-height: 2em;
+    font-size: 1.2em;
+}
