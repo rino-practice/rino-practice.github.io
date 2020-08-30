@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="mail.css">
+    <title></title>
+</head>
+
+<body>
+    <div id="wrap">
+
+        <div id="sidenavi">
+            <nav>
+                <h1>
+                    <a href="index.html"><img src="images/logo.png" alt="" width="120"></a>
+                </h1>
+
+                <ul class="nav">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#event">Event</a></li>
+                </ul>
+                <ul class="subnav">
+
+                    <li class="ultitle">お問い合わせ</li>
+                    <li class="tel"><img src="images/telicon.png" alt="" width="15">090-123-4567</li>
+                </ul>
+                <div id="mailpanf">
+                    <p class="mail"><a href="mail.html">Mail<br><img src="images/mailicon.png" alt=""></a></p>
+                    <p class="panf"> <a href="panf.html">資料請求<br><img src="images/1844.png" alt=""></a></p>
+                </div>
+                <p class="favo"><a href="">お気に入り</a></p>
+
+            </nav>
+        </div>
+
+        <div id="toi">
+            <h2>お問い合わせ</h2>
+            <p>物件やイベントについてのお問い合わせは、下記フォームよりお気軽にお問い合わせください。</p>
+            <ul>
+                <li>必要事項を記入し、「確認する」をクリックしてください。</li>
+                <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+                <li>なお資料をご希望の方は<a href="panf.html">こちら</a>をご覧の上、ご請求ください。</li>
+            </ul>
+
+            <form action="#">
+                <p><label>お名前（必須）<br>
+                        <input type="text" name="name" required></label></p>
+                <p><label>メールアドレス（必須）<br>
+                        <input type="email" name="mail" required></label></p>
+                <p>お問い合わせ種類<br>
+                    <label><input type="radio" name="kind" value="0">事前のご相談</label>　<label><input type="radio" name="kind" value="1">その他</label></p>
+                <p><label>内容<br>
+                        <textarea name="comment"></textarea></label></p>
+                <p><input type="submit" value="確認する"></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
