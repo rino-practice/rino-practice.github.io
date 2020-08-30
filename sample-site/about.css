@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    color: rgb(49, 39, 20);
+
+
+}
+
+
+#wrap {
+    margin: 0;
+}
+
+#sidenavi {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+
+#contents,
+#content2 {
+    float: right;
+    width: 80%;
+
+}
+
+
+
+
+
+
+
+/*-----------------------sidenavi----------------------------------*/
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul {
+    padding: 15px;
+}
+
+.nav li {
+    background-color: #312714;
+    border-radius: 15px;
+    text-align: center;
+    font-family: serif;
+    margin: 10px;
+    font-size: 1.5em;
+}
+
+.nav li:hover {
+    background-color: rgba(49, 39, 20, 0.44);
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #eaeaea;
+}
+
+#mailpanf a,
+p.favo a {
+    text-decoration: none;
+}
+
+
+.subnav,
+.nav {
+    margin: 0;
+}
+
+.ultitle {
+    text-align: center;
+    font-weight: 700;
+}
+
+.tel {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+#mailpanf {
+    display: flex;
+    justify-content: center;
+}
+
+p.mail,
+p.panf {
+    border: 2px solid rgb(49, 39, 20);
+    border-radius: 15px;
+    width: 40%;
+    margin: 2%;
+    font-weight: 700;
+    text-align: center;
+}
+
+p.mail a,
+p.panf a,
+p.favo a {
+    color: #000;
+}
+
+
+/*p.mail :hover,
+p.panf :hover {
+background-color: #312714;
+}*/
+
+p.panf img {
+    width: 60%;
+    padding: 5%;
+
+}
+
+p.mail img {
+    width: 80%;
+    padding: 5%;
+}
+
+nav p.favo {
+    width: 90%;
+    text-align: center;
+    border: 2px solid rgb(49, 39, 20);
+    margin: 2%;
+    border-radius: 15px;
+    font-weight: 600;
+    padding-left: 5%;
+}
+
+
+/*-----------------------contents----------------------------------*/
+
+#contents {
+    background-color: #fea;
+    position: relative;
+}
+
+img.aboutmain {
+
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.top {
+    position: absolute;
+    z-index: 100;
+    background-color: rgb(170, 170, 170, 0.60);
+
+    text-align: center;
+    right: 0;
+
+}
+
+.top h2 {
+    color: aliceblue;
+    font-size: 2.5em;
+    margin: 0;
+
+}
+
+#content2 {
+    background-color: #ffedda;
+    margin-top: 45%;
+}
+
+#content2 h2 {
+    text-align: center;
+}
+
+#content2 p {
+    padding: 20px;
+}
